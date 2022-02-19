@@ -5,9 +5,384 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="style/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <h1>Hi all!</h1>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <nav>
+                <ul class="menu">
+                  <li class="menu_item">
+                    <a
+                      href="#"
+                      data-en="Home"
+                      data-ru="Домой"
+                      class="menu_link active"
+                    ></a>
+                  </li>
+                  <li class="menu_item">
+                    <a
+                      href="#"
+                      data-en="About me"
+                      data-ru="Обо мне"
+                      class="menu_link"
+                    ></a>
+                  </li>
+                  <li class="menu_item">
+                    <a
+                      href="#"
+                      data-en="Skills"
+                      data-ru="Опыт"
+                      class="menu_link"
+                    ></a>
+                  </li>
+                  <li class="menu_item">
+                    <a
+                      href="#"
+                      data-en="Portfolio"
+                      data-ru="Потфолио"
+                      class="menu_link"
+                    ></a>
+                  </li>
+                  <li class="menu_item">
+                    <a
+                      href="#"
+                      data-en="Contacts"
+                      data-ru="Контакты"
+                      class="menu_link"
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="menu_btn">
+                <button data-modal-menu>
+                  <img src="icons/menu.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="target_name">
+                <p>Inants</p>
+                <p>Hayk</p>
+              </div>
+            </div>
+            <div class="col-md-3 offset-md-1">
+              <div class="target_info">
+                <p>web developer</p>
+                <p>28 years old, Yerevan</p>
+              </div>
+            </div>
+            <div class="col-md-4 lang_box">
+              <div class="lang_switch">
+                <div class="form_toggle">
+                  <label class="contactChoice item-1">
+                    <input
+                      id="fid-1"
+                      type="radio"
+                      name="radio"
+                      value="ru"
+                      checked
+                    />
+                    <div class="langs">ru</div>
+                  </label>
+
+                  <label class="contactChoice item-2">
+                    <input id="fid-2" type="radio" name="radio" value="eng" />
+                    <div class="langs">eng</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="target_photo">
+                <!-- <img src="media/targetPhoto.png" alt="photo" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="about_me">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="aboutme_header">About me</h2>
+            <div class="aboutme_descr">
+              <p>
+                Hi, I'm Hayk – web developer from Yerevan.
+                <br />
+                I'm interested in development and everything connected with it.
+              </p>
+              <p>
+                Ready to implement excellent projects
+                <br />
+                with wonderful people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my_skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="myskills_header">Skills</h2>
+            <h2 class="myskills_descr">I work in such technologies as</h2>
+          </div>
+        </div>
+        <div class="row gx-5 skill_cards">
+          <div class="col-md-3">
+            <div class="skills_icon skill_card">
+              <img src="icons/technology/html5.png" alt="html5" />
+            </div>
+            <h2 class="skills_card_descr">HTML5</h2>
+            <div class="rating-mini">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-md-3 skill_card">
+            <div class="skills_icon">
+              <img src="icons/technology/css3.png" alt="css3" />
+            </div>
+            <h2 class="skills_card_descr">CSS3</h2>
+            <div class="rating-mini">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-md-3 skill_card">
+            <div class="skills_icon">
+              <img src="icons/technology/javascript.png" alt="javascript" />
+            </div>
+            <h2 class="skills_card_descr">JavaScript</h2>
+            <div class="rating-mini">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-md-3 skill_card">
+            <div class="skills_icon">
+              <img src="icons/technology/react.png" alt="react" />
+            </div>
+            <h2 class="skills_card_descr">React</h2>
+            <div class="rating-mini">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my_portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="portfolio_header">Portfolio</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md porfolio_card">
+            <div class="portfolio_image">
+              <img src="media/levis.png" alt="levis" />
+            </div>
+            <div class="portfolio_link">
+              <a href="#">Online fashion store - Homepage</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md porfolio_card">
+            <div class="portfolio_image">
+              <img src="media/reebok.png" alt="reebok" />
+            </div>
+            <div class="portfolio_link">
+              <a href="#">Reebok Store - Concept</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md porfolio_card">
+            <div class="portfolio_image">
+              <img src="media/braun.png" alt="braun" />
+            </div>
+            <div class="portfolio_link">
+              <a href="#">Braun Landing Page - Concept</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="contacts_header">Contacts</h2>
+            <div class="contacts_descr">
+              <p>
+                Want to know more or just chat?
+                <br />
+                You are welcome!
+              </p>
+            </div>
+
+            <div class="contacts_btn">
+              <button data-modal>Send message</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 socialnet_icons">
+            <a href="#"
+              ><img src="icons/contacts/linkedIn.png" alt="linkedIn" />
+            </a>
+            <a href="#"
+              ><img src="icons/contacts/instagram.png" alt="instagram" />
+            </a>
+            <a href="#"
+              ><img src="icons/contacts/behance.png" alt="behance" />
+            </a>
+            <a href="#"
+              ><img src="icons/contacts/dribbble.png" alt="dribbble" />
+            </a>
+          </div>
+          <div class="socialnet_descr">
+            <p>
+              Like me on
+              <br />
+              LinkedIn, Instagram, Behance, Dribble
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form method="POST">
+            <div data-close class="modal__close">×</div>
+            <div class="modal__input">
+              <label for="name_input">Your name</label>
+              <input id="name_input" />
+            </div>
+            <div class="modal__input">
+              <label for="email_input">Your email</label>
+              <input type="email" id="email_input" />
+            </div>
+            <div class="modal__input">
+              <label for="phone_input">Your phone:</label>
+              <input id="phone_input" />
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_menu">
+      <div class="modal_menu__dialog">
+        <div class="modal_menu__content">
+          <div data-menu-close class="modal_menu__close">×</div>
+          <div class="modal_menu__input">
+            <a
+              href="#"
+              data-en="Home"
+              data-ru="Домой"
+              class="menu_link active"
+            ></a>
+          </div>
+          <div class="modal_menu__input">
+            <a
+              href="#"
+              data-en="About me"
+              data-ru="Обо мне"
+              class="menu_link"
+            ></a>
+          </div>
+          <div class="modal_menu__input">
+            <a href="#" data-en="Skills" data-ru="Опыт" class="menu_link"></a>
+          </div>
+          <div class="modal_menu__input">
+            <a
+              href="#"
+              data-en="Portfolio"
+              data-ru="Потфолио"
+              class="menu_link"
+            ></a>
+          </div>
+          <div class="modal_menu__input">
+            <a
+              href="#"
+              data-en="Contacts"
+              data-ru="Контакты"
+              class="menu_link"
+            ></a>
+          </div>
+          <div class="col-md-4 lang_box">
+            <div class="lang_switch">
+              <div class="form_toggle">
+                <label class="contactChoice item-1">
+                  <input
+                    id="fid-1"
+                    type="radio"
+                    name="radio"
+                    value="ru"
+                    checked
+                  />
+                  <div class="langs">ru</div>
+                </label>
+
+                <label class="contactChoice item-2">
+                  <input id="fid-2" type="radio" name="radio" value="eng" />
+                  <div class="langs">eng</div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script/script.js"></script>
   </body>
 </html>
